@@ -747,11 +747,13 @@ func Provider() *schema.Provider {
 
 			"aws_opensearch_domain": opensearch.DataSourceDomain(),
 
-			"aws_organizations_delegated_administrators": organizations.DataSourceDelegatedAdministrators(),
-			"aws_organizations_delegated_services":       organizations.DataSourceDelegatedServices(),
-			"aws_organizations_organization":             organizations.DataSourceOrganization(),
-			"aws_organizations_organizational_units":     organizations.DataSourceOrganizationalUnits(),
-			"aws_organizations_resource_tags":            organizations.DataSourceResourceTags(),
+			"aws_organizations_delegated_administrators":                organizations.DataSourceDelegatedAdministrators(),
+			"aws_organizations_delegated_services":                      organizations.DataSourceDelegatedServices(),
+			"aws_organizations_organization":                            organizations.DataSourceOrganization(),
+			"aws_organizations_organizational_units":                    organizations.DataSourceOrganizationalUnits(),
+			"aws_organizations_organizational_unit_child_accounts":      organizations.DataSourceOrganizationalUnitChildAccounts(),
+			"aws_organizations_organizational_unit_descendant_accounts": organizations.DataSourceOrganizationalUnitDescendantAccounts(),
+			"aws_organizations_resource_tags":                           organizations.DataSourceResourceTags(),
 
 			"aws_outposts_outpost":                outposts.DataSourceOutpost(),
 			"aws_outposts_outpost_instance_type":  outposts.DataSourceOutpostInstanceType(),
